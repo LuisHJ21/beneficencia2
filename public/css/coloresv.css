@@ -1,0 +1,116 @@
+
+:root
+{
+    --verde:#5DA271;
+    --rojo:#D64045;
+    --azul:#2274A5;
+}
+
+
+body
+{
+    background-color: #f8f8f8 !important;
+}
+
+footer
+{
+    background-color: #343434 !important;
+}
+
+
+
+header nav
+{
+/*     background-color: #2274A5 !important;
+ */    
+    /* background-color: var(--verde) !important; */
+    background-color: #fff !important;
+
+}
+
+header .novi-icon:hover
+{
+    background-color: var(--rojo)  !important;
+    color:#F5F5F5 !important;
+}
+header .novi-icon
+{
+    background-color: #F5F5F5 !important;
+    color: #000 !important;
+    font-size: 18px !important;
+}
+
+.rd-navbar-static .rd-navbar-nav > li > a:after
+{
+background: var(--rojo) !important;
+}
+
+
+.barra>ul> li>a
+{
+    color:#000 !important;
+  
+}
+
+.rd-navbar-aside-wrap:after
+{
+    border-bottom: 1px solid #343434 !important;
+}
+
+.thumbnail .thumbnail-caption
+{
+    background-color: var(--azul)  !important;
+}
+
+.btn-outline-danger
+{
+    font-size: 12px;
+    color:#fff !important;
+    border-color:#fff !important;
+}
+
+.btn-outline-danger:hover
+{
+    background-color: transparent !important;
+}
+
+
+.post-boxed-title a
+{
+    color:#fff;
+}
+
+.titulo-principal
+{
+    color:var(--azul)  !important;
+}
+
+
+.bg-teak {
+    background: #F5F5F5 !important;
+    fill: #F5F5F5 !important;
+}
+
+#ui-to-top
+{
+    background-color: #343434 !important;
+}
+
+
+#ui-to-top:hover
+{
+    background-color: var(--verde)  !important;
+}
+
+rd-navbar-fixed .rd-navbar-nav li:hover > a, .rd-navbar-fixed .rd-navbar-nav li:hover > a:hover, .rd-navbar-fixed .rd-navbar-nav li.focus > a, .rd-navbar-fixed .rd-navbar-nav li.focus > a:hover, .rd-navbar-fixed .rd-navbar-nav li.active > a, .rd-navbar-fixed .rd-navbar-nav li.active > a:hover, .rd-navbar-fixed .rd-navbar-nav li.opened > a, .rd-navbar-fixed .rd-navbar-nav li.opened > a:hover {
+  /*colores nav movil*/
+    color: #fff;
+    background: var(--azul)  !important ;
+}
+
+
+
+.unit-body
+{
+    color: #000 !important;
+}

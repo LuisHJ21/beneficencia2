@@ -1,0 +1,49 @@
+.alert-danger {
+    color: #721c24 !important;
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb !important;
+}
+
+.alert-success {
+    color: #155724 !important;
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+}
+
+
+
+.nav-treeview > .nav-item:hover{
+    background-color: rgba(255,255,255,.9);
+  
+}
+
+
+.nav-treeview > .nav-item:hover > a{
+color:#343a40 !important;
+}
+
+.navbar-up
+{
+    background-color: #2274A5 !important;
+}
+
+.navbar-up a
+{
+    color:#e3e3e3 !important;
+}
+
+.content-wrapper
+{
+    background-color: #e3e3e3 !important;
+}
+
+.dataTables_wrapper > .row:first-of-type
+{
+    padding:1rem 2rem 0.8rem 2rem;
+}
+
+.dataTables_wrapper > .row:nth-of-type(3)
+{
+    padding:0.8rem 2rem 0.8rem 2rem;
+    border-top:1px solid rgba(0,0,0,.125);
+}
