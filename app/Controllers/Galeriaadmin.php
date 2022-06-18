@@ -94,8 +94,6 @@ class Galeriaadmin extends BaseController
 			unlink($public_id);
 
 		
-
-
 			$galeria=$this->galeria->purgeDeleted();
 
 			return redirect()->to(base_url('admin/serfin/galeria'))->with('success','La Imagen se ha Eliminado con Exito.');

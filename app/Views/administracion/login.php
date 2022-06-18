@@ -10,7 +10,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link href="<?php echo base_url() ?>/css/fontawesome-free/css/all.css" rel="stylesheet"> 
+  <link href="<?php echo base_url() ?>/css/fontawesome-pro/css/all.css" rel="stylesheet"> 
   <!-- icheck bootstrap -->
   <link rel="stylesheet" href="<?php echo base_url() ?>/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
