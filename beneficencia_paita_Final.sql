@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-06-2022 a las 18:36:02
+-- Tiempo de generación: 19-06-2022 a las 02:25:13
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -76,9 +76,9 @@ CREATE TABLE `galeria-serfin` (
   `id` int(11) NOT NULL,
   `imagen` varchar(500) NOT NULL,
   `public_id` varchar(250) NOT NULL,
-  `creado` int(11) NOT NULL,
-  `actualizado` int(11) DEFAULT NULL,
-  `eliminado` int(11) DEFAULT NULL
+  `creado` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `actualizado` timestamp NULL DEFAULT NULL,
+  `eliminado` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -86,11 +86,11 @@ CREATE TABLE `galeria-serfin` (
 --
 
 INSERT INTO `galeria-serfin` (`id`, `imagen`, `public_id`, `creado`, `actualizado`, `eliminado`) VALUES
-(2, 'https://res.cloudinary.com/luishj/image/upload/v1/beneficencia/galeriaserfin/6YUWA.jpg?_a=AAAEuAI', 'beneficencia/galeriaserfin/6YUWA', 2021, 2021, NULL),
-(3, 'https://res.cloudinary.com/luishj/image/upload/v1/beneficencia/galeriaserfin/4O0D8.jpg?_a=AAAEuAI', 'beneficencia/galeriaserfin/4O0D8', 2021, 2021, NULL),
-(4, 'https://res.cloudinary.com/luishj/image/upload/v1/beneficencia/galeriaserfin/6W4ZU.jpg?_a=AAAEuAI', 'beneficencia/galeriaserfin/6W4ZU', 2021, 2021, NULL),
-(5, 'https://res.cloudinary.com/luishj/image/upload/v1/beneficencia/galeriaserfin/58T47.jpg?_a=AAAEuAI', 'beneficencia/galeriaserfin/58T47', 2021, 2021, NULL),
-(6, 'https://res.cloudinary.com/luishj/image/upload/v1/beneficencia/galeriaserfin/M489Y.jpg?_a=AAAEuAI', 'beneficencia/galeriaserfin/M489Y', 2021, 2021, NULL);
+(7, 'http://localhost/beneficencia/public/imageUploads/galeriaserfin/2A5PG.jpg', 'imageUploads/galeriaserfin/2A5PG.jpg', '2022-06-18 23:06:41', '2022-06-18 23:06:41', NULL),
+(8, 'http://localhost/beneficencia/public/imageUploads/galeriaserfin/CSRLE.jpg', 'imageUploads/galeriaserfin/CSRLE.jpg', '2022-06-18 23:06:48', '2022-06-18 23:06:48', NULL),
+(12, 'http://localhost/beneficencia/public/imageUploads/galeriaserfin/IADBE.jpg', 'imageUploads/galeriaserfin/IADBE.jpg', '2022-06-18 23:08:34', '2022-06-18 23:08:34', NULL),
+(13, 'http://localhost/beneficencia/public/imageUploads/galeriaserfin/84I7K.jpg', 'imageUploads/galeriaserfin/84I7K.jpg', '2022-06-18 23:08:44', '2022-06-18 23:08:44', NULL),
+(14, 'http://localhost/beneficencia/public/imageUploads/galeriaserfin/KZYJQ.jpg', 'imageUploads/galeriaserfin/KZYJQ.jpg', '2022-06-18 23:09:53', '2022-06-18 23:09:53', NULL);
 
 -- --------------------------------------------------------
 
@@ -392,7 +392,7 @@ ALTER TABLE `eventos`
 -- AUTO_INCREMENT de la tabla `galeria-serfin`
 --
 ALTER TABLE `galeria-serfin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `imagen-noticia`
